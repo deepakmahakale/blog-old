@@ -5,9 +5,9 @@ date:     2016-12-05 00:00:30 +0530
 comments: true
 ---
 
-> If the migration name is of the form "CreateXXX" and is followed by a list of column names and types then a migration creating the table XXX with the columns listed will be generated.
-
 ### Creating a table
+
+> If the migration name is of the form "CreateXXX" and is followed by a list of column names and types then a migration creating the table XXX with the columns listed will be generated.
 
 ```bash
 $ rails g migration CreateUsers email:string:index
@@ -26,9 +26,9 @@ class CreateUsers < ActiveRecord::Migration
 end
 ```
 
-> If the migration name is of the form "AddXXXToYYY" or "RemoveXXXFromYYY" and is followed by a list of column names and types then a migration containing the appropriate add_column and remove_column statements will be created.
-
 ### Adding a new column to table
+
+> If the migration name is of the form "AddXXXToYYY" or "RemoveXXXFromYYY" and is followed by a list of column names and types then a migration containing the appropriate add_column and remove_column statements will be created.
 
 ```sh
 rails generate migration AddPartNumberToProducts part_number:string
