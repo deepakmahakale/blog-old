@@ -12,7 +12,9 @@ comments: true
 ```bash
 $ rails g migration CreateUsers email:string:index
 ```
+
 _db/migrate/20161201203703_create_users.rb_
+
 ```ruby
 class CreateUsers < ActiveRecord::Migration
   def change
@@ -27,10 +29,13 @@ end
 > If the migration name is of the form "AddXXXToYYY" or "RemoveXXXFromYYY" and is followed by a list of column names and types then a migration containing the appropriate add_column and remove_column statements will be created.
 
 ### Adding a new column to table
+
 ```sh
 rails generate migration AddPartNumberToProducts part_number:string
 ```
+
 _db/migrate/20161201204626_add_part_number_to_products.rb_
+
 ```ruby
 class AddPartNumberToProducts < ActiveRecord::Migration
   def change
@@ -40,10 +45,13 @@ end
 ```
 
 ### Removing a column from table
+
 ```sh
 rails generate migration RemovePartNumberFromProducts part_number:string
 ```
+
 _db/migrate/20161201204909_remove_part_number_from_products.rb_
+
 ```ruby
 class RemovePartNumberFromProducts < ActiveRecord::Migration
   def change
@@ -53,10 +61,13 @@ end
 ```
 
 ### Adding a reference to table
+
 ```sh
 rails generate migration AddUserRefToProducts user:references
 ```
+
 _db/migrate/20161201205056_add_user_ref_to_products.rb_
+
 ```ruby
 class AddUserRefToProducts < ActiveRecord::Migration
   def change
@@ -66,10 +77,13 @@ end
 ```
 
 ### Creating a join table
+
 ```sh
 rails g migration CreateJoinTableCustomerProduct customer product
 ```
+
 _db/migrate/20161201205222_create_join_table_customer_product.rb_
+
 ```ruby
 class CreateJoinTableCustomerProduct < ActiveRecord::Migration
   def change
@@ -82,10 +96,13 @@ end
 ```
 
 ### Adding a new column to table with modifiers
+
 ```sh
 rails generate migration AddDetailsToProducts 'price:decimal{5,2}' supplier:references{polymorphic}
 ```
+
 _db/migrate/20161201205408_add_details_to_products.rb_
+
 ```ruby
 class AddDetailsToProducts < ActiveRecord::Migration
   def change
@@ -94,7 +111,9 @@ class AddDetailsToProducts < ActiveRecord::Migration
   end
 end
 ```
+
 #### List of column modifiers
+
 |     Modifier    |  Description |
 |-----------------|---|
 | `limit`       | Sets the maximum size of the string/text/binary/integer fields. |
