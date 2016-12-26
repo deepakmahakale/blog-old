@@ -5,7 +5,7 @@ date:     2016-06-16 14:00:58 +0530
 comments: true
 ---
 
-Rails provide different ways to load associations from the database to avoid [N + 1 query][eager-loading-associations] being fired.
+Rails provide different ways to load associations from the database to avoid [N + 1 query][eager-loading-associations]{:target="_blank"} being fired.
 In this post, I will show you how to `include` associations with scope applied on them.
 
 I have two models `User` and `Post` with following associations:
