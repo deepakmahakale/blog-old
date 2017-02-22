@@ -10,8 +10,8 @@ title: Blog
 email: deepakmahakale@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   This is my personal blog. You will find articles related to ruby on rails here.
-#baseurl: "/blog" # the subpath of your site, e.g. /blog
-url: "http://blog.deepakmahakale.in" # the base hostname & protocol for your site
+baseurl: "/blog" # the subpath of your site, e.g. /blog
+url: "http://deepakmahakale.in" # the base hostname & protocol for your site
 twitter_username: deepakmahakale
 github_username:  deepakmahakale
 
